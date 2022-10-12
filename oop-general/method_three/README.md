@@ -1,0 +1,5 @@
+# Method_Three
+
+This folder is a simple implementation of the requirements.
+
+This structure makes the assumptions that 'Driver' is the parent class with Car and it's Engine an extension of the Driver. Then the public methods in 'Engine' are accesible to the driver through the Car and the private methods are not. This means that the method calls through the Driver can directly access the Car Engine's methods instead of having the user call methods through Car, like in method one. Method Three further builds out of the structure of Method Two, branching off the Engine method of 'shiftGears'. How the gears shift are often determined by whether your car is Manual or Automatic so for this iteration, I assumed that the user would be able to choose. In this implementation, each driver has to specify the CarType and the Engine's turn_rate alters based on that given information.
